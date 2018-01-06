@@ -1,8 +1,6 @@
 <template>
-  <div class="index">
+  <div class="wrapper">
     <Header></Header>
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
     <Footer></Footer>
   </div>
 </template>
@@ -14,7 +12,6 @@ import Footer from './footer/footer'
 export default {
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
     }
   },
   components:{
@@ -27,11 +24,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less">
 @import '../../static/less.less';
-@color:#666;
-h1{
-  color: @color;
+.wrapper{
+  width: 100%;
+  min-width: 1200px;
 }
-h2{
-  color: @commoncolor;
-}
+
 </style>
